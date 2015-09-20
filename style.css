@@ -1,20 +1,25 @@
-#messagesDiv {
-	background-color: #AAAAAA;
-	max-width: 75%;
-	width: 700px;
-	margin: 0 auto;
+body {
+	font-family: Helvetica, Arial, Sans-Serif;
+	background-color: #CCCCCC;
 }
-.container {
-	max-height: 75%;
+
+
+#messagesDiv {
+	background-color: #BBBBBB;
+	max-width: 95%;
+	width: 700px;
 	overflow-y: scroll;
+	max-height: 75%;
+	margin: 0 auto;
 }
 
 
 .logo{
-	height: 100px;
+	height: 67px;
 	display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .message{
@@ -33,7 +38,7 @@
 
 .selfMessage{
     border-radius: 25px;
-    background: #E26700;
+    background: #E97F31;
     max-width: 75%;
     display: inline-block;
     float: right;
@@ -45,28 +50,6 @@
 	margin: 5px;
 }
 
-.total{
-	/*display: inline-block;*/
-	margin: auto;
-}
-
-body {
-    background-color: #CCCCCC;
-} 
-
-#h1{
-	font-size: 20px;
-	border:1px solid black;
-	border-radius: 10px;
-	padding:5px;
-	margin:20px;
-}
-
-#a {
-	font-family: Arial, Helvetica, sans-serif;
-	color: red;
-}
-
 #loadingMessage{
 	font-size: 20px;
 	margin-bottom: 5px;
@@ -74,10 +57,22 @@ body {
 }
 
 #messageInput{
+	font-size: 20px;
 	display: block;
 	margin-left: auto;
     margin-right: auto;
 	margin-bottom: 10px;
 	margin-top: 25px;
-	width: 75%;
+	max-width: 95%;
+	width: 700px;
+}
+
+
+#footer{
+	display: block;
+	text-align: center;
+	font-size: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 95%;
 }

@@ -20,17 +20,17 @@ $('#messageInput').keypress(function(e) {
 
 function displayChatMessage(name, text) {
     if (myName === name) {
-        $('<div id=' + name + ' class=selfMessage/>').text(text).prepend($('<em/>').text(name + ': ')).appendTo($('#messagesDiv'));
+        $('<div id=' + name + ' class=selfMessage/>').text(text).prepend($('<b/>').text(name + ': ')).appendTo($('#messagesDiv'));
     } else {
-        $('<div id=' + name + ' class=message/>').text(text).prepend($('<em/>').text(name + ': ')).appendTo($('#messagesDiv'));
+        $('<div id=' + name + ' class=message/>').text(text).prepend($('<b/>').text(name + ': ')).appendTo($('#messagesDiv'));
     }
 
-
     $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+
 };
 
 $(function() {
-    $('#messageInput').hide();
+    $('#messageInput, footer').hide();
 	
 	var rand = Math.random() * names.length;
 	
@@ -71,7 +71,7 @@ function distance(lat1, lon1, lat2, lon2, unit) {
 
 function showPosition(position) {
     $('#loadingMessage').hide();
-    $('#messageInput').show();
+    $('#messageInput, footer').show();
     myDataRef = new Firebase('https://shining-inferno-1955.firebaseio.com/');
     lat = position.coords.latitude;
     lon = position.coords.longitude;
