@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='names.js'></script>
+    <script>
+        $(document).ready(function() {
+            var rand = Math.random() * names.length;
+            var myName = names[Math.floor(rand)];
+			var oldCookie = getCookie("name");
+
+            $("#name").text("Your name is " + myName + " and your last name was " + oldCookie);
+
+            console.log(myName);
+            document.cookie = "name=" + myName;
+			console.log(oldCookie);
+        });
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+    </script>
+</head>
+
+<body>
+    <p id="name"></p>
+</body>
+
+</html>

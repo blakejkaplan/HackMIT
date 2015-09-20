@@ -1,0 +1,83 @@
+#messagesDiv {
+	background-color: #AAAAAA;
+	max-width: 75%;
+	width: 700px;
+	margin: 0 auto;
+}
+.container {
+	max-height: 75%;
+	overflow-y: scroll;
+}
+
+
+.logo{
+	height: 100px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message{
+    border-radius: 25px;
+    background: #FFFFFF;
+    max-width: 75%;
+    display: inline-block;
+    clear: both;
+    float: left;
+	font-size: 20px;
+	border:1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.selfMessage{
+    border-radius: 25px;
+    background: #E26700;
+    max-width: 75%;
+    display: inline-block;
+    float: right;
+    clear: both;
+	font-size: 20px;
+	border:1px solid black;
+	border-radius: 10px;
+	padding:5px;
+	margin: 5px;
+}
+
+.total{
+	/*display: inline-block;*/
+	margin: auto;
+}
+
+body {
+    background-color: #CCCCCC;
+} 
+
+#h1{
+	font-size: 20px;
+	border:1px solid black;
+	border-radius: 10px;
+	padding:5px;
+	margin:20px;
+}
+
+#a {
+	font-family: Arial, Helvetica, sans-serif;
+	color: red;
+}
+
+#loadingMessage{
+	font-size: 20px;
+	margin-bottom: 5px;
+	position: fixed;
+}
+
+#messageInput{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 10px;
+	margin-top: 25px;
+	width: 75%;
+}

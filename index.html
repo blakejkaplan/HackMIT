@@ -1,15 +1,34 @@
 <html>
 
 <head>
-    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+	<script src='names.js'></script>
+	<script src='js.cookie.js'></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	
+
+	<link rel="icon" href="favicons/favicon-96x96.png" type="image/png" sizes="16x16">
 </head>
 
 <body>
-    <div id='messagesDiv'></div>
-    <input type='text' id='nameInput' placeholder='Name'>
-    <input type='text' id='messageInput' placeholder='Message'>
-    <script src='action.js'></script>
+
+<img src="wordLogo.png" class='logo'>
+
+<div class="container">
+	
+
+    <div id='loadingMessage'>Loading...</div>
+
+  	<div id='messagesDiv'></div>
+	
+</div>
+
+<input type='text' id='messageInput' placeholder='Message'>
+<script src='cleanup.js'></script>
+ <script src='action.js'></script>
+
 </body>
 
 </html>
