@@ -109,7 +109,7 @@ function showPosition(position) {
         myDistance = 0;
     }
 
-    if(myDistance>.25){
+    if(myDistance>.05){
         return;
     }
 
