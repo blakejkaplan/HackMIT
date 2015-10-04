@@ -8,7 +8,7 @@ function cleanup(ref){
 	    	var key = childSnapshot.key();
 	    	var childData = childSnapshot.val();
 
-	    	if (currentTime - childData.time >= 43200000) {
+	    	if (currentTime - childData.time >= 86700000) {
 	    		var child = childSnapshot.ref();
 	    		child.remove();
     } 
